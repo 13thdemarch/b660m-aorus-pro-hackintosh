@@ -46,8 +46,8 @@
 
 ![USB](./ss/usb.png)
 
-| Name | Type     | Visible | Description |
-|------|------|----------|---------|-------------|
+| Name | Type | Visible | Description |
+|------|----------|---------|-------------|
 | HS01 | Type C+Sw | Yes     | C Port on mobo|
 | HS02 | Internal  | Yes     | USB 2.0 Hub on mobo, currently include my BCM94360CD card |
 | HS03 | Type 3  | Yes     | USB 2.0 Hub |
