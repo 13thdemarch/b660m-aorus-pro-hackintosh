@@ -1,6 +1,6 @@
 # Gigabyte Aorus Pro DDR4 Hackintosh
 
-![BigSur](screenshot.png)
+![ss](./ss/screenshot.png)
 
 * macOS:
   - Ventura 13.0 Beta 5 🔶
@@ -22,8 +22,8 @@
 | LAN | Intel Ethernet I-225V |
 | BIOS Version | F20a |
 
-![CPU](ss\cpubench.png)
-![GPU](ss\gpubench.png)
+![CPU](./ss/cpubench.png)
+![GPU](./ss/gpubench.png)
 
 ## Current Status
 
@@ -44,7 +44,7 @@
 
 ## USB Mapping
 
-![USB](ss\usb.png)
+![USB](./ss/usb.png)
 
 | Name | Port | Type     | Visible | Description |
 |------|------|----------|---------|-------------|
