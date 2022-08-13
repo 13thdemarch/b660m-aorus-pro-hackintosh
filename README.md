@@ -54,7 +54,7 @@
 | HS04 | Type 3 | Yes     | |
 | HS05 | Type 3 | Yes      | 4-Port USB 2.0 Hub |
 | HS06 | Type 3 | Yes     | 4-Port USB 2.0 Hub |
-| HS07 | Type 3 | Internal     | ITE Device |
+| HS07 | Type 3 | Yes     | ITE Device |
 | SS01 | Type C+Sw | Yes     | |
 | SS02 | Internal  | Yes     | |
 | SS03 | Type 3   | Yes     | |
