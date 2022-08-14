@@ -20,7 +20,7 @@
 | Sound | Realtek ALC897 |
 | Wireless, Bluetooth | Apple BCM94360CD Wireless Card |
 | LAN | Intel Ethernet I-225V |
-| BIOS Version | F20a |
+| BIOS Version | F6a |
 
 ![CPU](./ss/cpubench.png)
 ![GPU](./ss/gpubench.png)
@@ -63,7 +63,7 @@
 
 ## CPU Power Management
 
-* CPU power management is done by `CPUFriend.kext` while `CPUFriendDataProvider.kext` defines how it should be done. `CPUFriendDataProvider.kext` is generated for a specific CPU and power setting. The one supplied in this repository was made for the i7-12700F. In case you have another CPU, you should follow [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html) to generate your own `CPUFriendDataProvider.kext`.
+* CPU power management is done by `CPUFriend.kext` while `CPUFriendDataProvider.kext` defines how it should be done. `CPUFriendDataProvider.kext` is generated for a specific CPU and power setting. The one supplied in this repository is very universal for Alder Lake CPU.
 
 ## iService
 
