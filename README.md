@@ -42,6 +42,32 @@
 | DRM | ✅ Working |
 | BootCamp | ✅ Working |
 
+## BIOS Configuration
+
+# Tweaker:
+* Advanced CPU Settings:
+  ** Hyper-Threading Technology: Enabled
+  ** Intel Turbo Boost Technology: Enabled
+  ** Legacy Game Compatibility Mode: Disabled
+  ** AVX: Enabled
+* Extreme Memory Profile: Profile1
+# Settings:
+- IO Ports:
+  ** Above 4G Decoding: Enabled
+  ** Re-Size BAR Support: Enabled (if you have RX 6000 Series)
+  ** Super IO Configuration > Serial Port: Enabled
+  ** USB Configuration > XHCI Hand-off: Enabled
+  ** Network Stack Configuration > Network Stack: Disabled
+- Miscellaneous:
+  ** Intel Platform Trust Technology: Disabled
+  ** VT-d: Disabled
+  ** Trusted Computing > Security Device Support: Disable
+# Boot: 
+- CFG Lock: Disabled
+- Fast Boot: Disable Link
+- Windows 10 Features: Other OS
+- CSM Support: Disabled
+
 ## USB Mapping
 
 ![USB](./ss/usb.png)
