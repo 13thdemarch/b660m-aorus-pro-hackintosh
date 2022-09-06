@@ -608,7 +608,12 @@
 			<string>Optional</string>
 		</dict>
 		<key>Serial</key>
-		<dict/>
+		<dict>
+			<key>Init</key>
+			<false/>
+			<key>Override</key>
+			<false/>
+		</dict>
 		<key>Tools</key>
 		<array/>
 	</dict>
