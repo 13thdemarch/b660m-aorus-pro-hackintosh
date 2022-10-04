@@ -3,7 +3,7 @@
 ![ss](./ss/screenshot.png)
 
 * macOS:
-  - Ventura 13.0 Beta 5 🔶
+  - Ventura 13.0 Beta 9 🔶
   - Monterey 12.5 ✅
 * Bootloader: OpenCore
 
@@ -23,7 +23,8 @@
 | BIOS Version | F6a |
 
 ![CPU](./ss/cpubench.png)
-![GPU](./ss/gpubench.png)
+![GPUMetal](./ss/gpubench_metal.png)
+![GPUOpenCL](./ss/gpubench_opencl.png)
 
 ## Current Status
 
@@ -72,20 +73,17 @@
 
 ![USB](./ss/usb.png)
 
-| Name | Type | Visible | Description |
+| Port | Connector | Visible | Description |
 |------|----------|---------|-------------|
-| HS01 | Type C+Sw | Yes     | C Port on mobo|
-| HS02 | Internal  | Yes     | USB 2.0 Hub on mobo, currently include my BCM94360CD card |
-| HS03 | Type 3  | Yes     | USB 2.0 Hub |
-| HS04 | Type 3 | Yes     | |
-| HS05 | Type 3 | Yes      | 4-Port USB 2.0 Hub |
-| HS06 | Type 3 | Yes     | 4-Port USB 2.0 Hub |
-| HS07 | Type 3 | Yes     | ITE Device |
-| SS01 | Type C+Sw | Yes     | |
-| SS02 | Internal  | Yes     | |
-| SS03 | Type 3   | Yes     | |
-| SS04 | Type 3   | Yes     | 2-Port USB 3.0 Hub |
-| SS05 | Type 3   | Yes     | 2-Port USB 3.0 Hub |
+| 01 | Type C | Yes     | C Port on mobo|
+| 05 | Internal | Yes     | USB 2.0 Hub on mobo, currently include my BCM94360CD card |
+| 06 | Type A | Yes     | USB 2.0 Hub |
+| 09 | Type 3 | Yes      | 4-Port USB 2.0 Hub |
+| 0A | Type A | Yes     | 4-Port USB 2.0 Hub |
+| 0B | Internal | Yes     | ITE Device |
+| 11 | Type C | Yes     | |
+| SS02 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
+| SS03 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
 
 ## CPU Power Management
 
