@@ -83,8 +83,8 @@
 | 0A | Type A | Yes     | 4-Port USB 2.0 Hub |
 | 0B | Internal | Yes     | ITE Device |
 | 11 | Type C | Yes     | |
-| SS02 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
-| SS03 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
+| 18 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
+| 19 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
 
 ## CPU Power Management
 
