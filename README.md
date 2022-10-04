@@ -6,6 +6,7 @@
   - Ventura 13.0 Beta 9 🔶
   - Monterey 12.5 ✅
 * Bootloader: OpenCore
+* Note: If you are installing macOS Monterey, please disable `AppleIntelI210Ethernet.kext` in the config.plist. That kext is only need for macOS Ventura.
 
 ## System Overview
 
@@ -13,7 +14,7 @@
 | ---- | ---- |
 | Motherboard | B660M Gigabyte Aorus Pro DDR4 |
 | CPU | Intel Core i7-12700F @ 2.10 GHz, 25M Cache, up to 4.90 GHz
-| RAM | 2 x Corsair Vengeance LPX 8GB 3200MHz DDR4 CMK16GX4M2E3200C |
+| RAM | 4 x Corsair Vengeance LPX 8GB 3200MHz DDR4 CMK16GX4M2E3200C |
 | GPU | Biostar RX 6600 8GB |
 | SSD1 | Western Digital SN850 500GB NVMe Gen4x4 Solid State Drive |
 | SSD2 | Lexar 256GB SATA Solid State Drive |
