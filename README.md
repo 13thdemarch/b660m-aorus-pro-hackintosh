@@ -111,6 +111,7 @@
 * Apple for macOS.
 * Acidanthera Team for OpenCore Bootloader and many Kernel Extensions.
 * MaLd0n and Olarila Team for hints for Alder Lake patches and config.
+* b00t0x for his amazing job with CpuTopologyRebuild.
 
 ## Support
 * Support me: 
