@@ -17,6 +17,7 @@
 | GPU | Biostar RX 6600 8GB |
 | SSD1 | Western Digital SN850 500GB NVMe Gen4x4 Solid State Drive |
 | SSD2 | Lexar 256GB SATA Solid State Drive |
+| SSD3 | KingSpec 480GB SATA Solid State Drive |
 | Sound | Realtek ALC897 |
 | Wireless, Bluetooth | Apple BCM94360CD Wireless Card |
 | LAN | Intel Ethernet I-225V |
