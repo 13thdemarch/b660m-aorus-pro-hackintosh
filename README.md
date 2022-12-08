@@ -82,10 +82,11 @@
 |------|----------|---------|-------------|
 | 01 | Type C | Yes     | C Port on mobo|
 | 05 | Internal | Yes     | USB 2.0 Hub on mobo, currently include my BCM94360CD card |
-| 06 | Type A | Yes     | USB 2.0 Hub |
-| 09 | Type 3 | Yes      | 4-Port USB 2.0 Hub |
-| 0A | Type A | Yes     | 4-Port USB 2.0 Hub |
+| 06 | Internal | Yes     | USB 2.0 Hub, should be internal |
+| 09 | Type 0 | Yes     | 4-Port USB 2.0 Hub |
+| 0A | Type 0 | Yes     | 4-Port USB 2.0 Hub |
 | 0B | Internal | Yes     | ITE Device |
+| 0E | Internal | Yes     | Intel Wireless Card | Only available on AX mobo |
 | 11 | Type C | Yes     | |
 | 18 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
 | 19 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
