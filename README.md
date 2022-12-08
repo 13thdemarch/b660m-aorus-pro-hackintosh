@@ -86,7 +86,7 @@
 | 09 | Type 0 | Yes     | 4-Port USB 2.0 Hub |
 | 0A | Type 0 | Yes     | 4-Port USB 2.0 Hub |
 | 0B | Internal | Yes     | ITE Device |
-| 0E | Internal | Yes     | Intel Wireless Card | Only available on AX mobo |
+| 0E | Internal | Yes     | Intel Wireless Card, only available on AX mobo |
 | 11 | Type C | Yes     | |
 | 18 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
 | 19 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
