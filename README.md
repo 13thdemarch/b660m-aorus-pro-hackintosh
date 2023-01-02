@@ -14,7 +14,7 @@
 | Motherboard | B660M Gigabyte Aorus Pro DDR4 |
 | CPU | Intel Core i7-12700F @ 2.10 GHz, 25M Cache, up to 4.90 GHz
 | RAM | 4 x Corsair Vengeance LPX 8GB 3200MHz DDR4 CMK16GX4M2E3200C |
-| GPU | Biostar RX 6600 8GB |
+| GPU | Sapphire Nitro+ RX 6600XT 8GB |
 | SSD1 | Western Digital SN850 500GB NVMe Gen4x4 Solid State Drive |
 | SSD2 | Lexar 256GB SATA Solid State Drive |
 | SSD3 | KingSpec 480GB SATA Solid State Drive |
@@ -50,9 +50,7 @@
 * Advanced CPU Settings:
   - Hyper-Threading Technology: Enabled
   - Intel Turbo Boost Technology: Enabled
-  - Legacy Game Compatibility Mode: Disabled
-  - AVX: Enabled
-* Extreme Memory Profile: Profile1
+* Extreme Memory Profile: Profile 1
 ### Settings:
 * IO Ports:
   - Above 4G Decoding: Enabled
@@ -61,9 +59,7 @@
   - USB Configuration > XHCI Hand-off: Enabled
   - Network Stack Configuration > Network Stack: Disabled
 * Miscellaneous:
-  - Intel Platform Trust Technology: Disabled
   - VT-d: Disabled
-  - Trusted Computing > Security Device Support: Disable
 ### Boot: 
 - CFG Lock: Disabled
 - Fast Boot: Disable Link
