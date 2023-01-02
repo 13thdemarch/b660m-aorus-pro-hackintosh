@@ -21,7 +21,7 @@
 | Sound | Realtek ALC897 |
 | Wireless, Bluetooth | Apple BCM94360CD Wireless Card |
 | LAN | Intel Ethernet I-225V |
-| BIOS Version | F20 |
+| BIOS Version | F21 |
 
 ![CPU](./ss/cpubench.png)
 ![GPUMetal](./ss/gpubench_metal.png)
@@ -67,8 +67,7 @@
 - CSM Support: Disabled
 
 ## config.plist
-- There are 2 types of config.plist file. Based on what GPU are using, please grab the correct config.plist file. Also remember to rename it back to `config.plist`.
-- In config.plist file for RX 6000 series GPU, I added the patch for disabling the ZeroRPM and make the temperature is lower than normal when idle. If you want to enable the patch, you can remove the `#` character before the PCI path in `DeviceProperties > Devices`. For more information you can check the tutorial from perez987 [here](https://github.com/perez987/6600XT-on-macOS-12-13-with-PowerPlayTable). He did amazing job about the guide.
+- There are 2 types of config.plist file. Based on what GPU are using, please grab the correct config.plist file. Default is for Navi graphic card.
 
 ## USB Mapping
 
