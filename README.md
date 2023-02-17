@@ -1,4 +1,4 @@
-# Gigabyte Aorus Pro DDR4 Hackintosh
+# Gigabyte Aorus Pro Hackintosh
 
 ![ss](./ss/screenshot.png)
 
