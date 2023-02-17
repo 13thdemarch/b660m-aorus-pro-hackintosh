@@ -33,7 +33,7 @@
 | ------------- | ------------- |
 | CPU Power Management | ✅ Working |
 | Sleep/Wake | ✅ Working |
-| AMD RX6600 Graphics Acceleration | ✅ Working |
+| AMD RX 6600XT Graphics Acceleration | ✅ Working |
 | Wi-Fi/Bluetooth | ✅ Working |
 | Ethernet | ✅ Working |
 | Audio | ✅ Working |
