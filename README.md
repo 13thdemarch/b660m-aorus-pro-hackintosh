@@ -1,4 +1,4 @@
-# Gigabyte Aorus Pro Hackintosh
+# Gigabyte Aorus Pro B660M Hackintosh
 
 ![ss](./ss/screenshot.png)
 
