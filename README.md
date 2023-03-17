@@ -12,9 +12,9 @@
 | Type | Item |
 | ---- | ---- |
 | Motherboard | B660M Gigabyte Aorus Pro DDR4 |
-| CPU | Intel Core i7-12700F @ 2.10 GHz, 25M Cache, up to 4.90 GHz
+| CPU | Intel Core i7-12700F @ 2.10 GHz, 25M Cache, up to 4.90 GHz|
 | RAM | 4 x Corsair Vengeance LPX 8GB 3200MHz DDR4 CMK16GX4M2E3200C |
-| GPU | Sapphire Nitro+ RX 6600XT 8GB |
+| GPU | Sapphire Nitro+ RX 6600 XT 8GB |
 | SSD1 | Western Digital SN850 500GB NVMe Gen4x4 Solid State Drive |
 | SSD2 | Lexar 256GB SATA Solid State Drive |
 | SSD3 | KingSpec 480GB SATA Solid State Drive |
@@ -33,7 +33,7 @@
 | ------------- | ------------- |
 | CPU Power Management | ✅ Working |
 | Sleep/Wake | ✅ Working |
-| AMD RX 6600XT Graphics Acceleration | ✅ Working |
+| AMD RX 6600 XT Graphics Acceleration | ✅ Working |
 | Wi-Fi/Bluetooth | ✅ Working |
 | Ethernet | ✅ Working |
 | Audio | ✅ Working |
@@ -47,24 +47,41 @@
 ## BIOS Configuration
 
 ### Tweaker:
+* Extreme Memory Profile: **Profile 1**
 * Advanced CPU Settings:
-  - Hyper-Threading Technology: Enabled
-  - Intel Turbo Boost Technology: Enabled
-* Extreme Memory Profile: Profile 1
+  - Hyper-Threading Technology: **Enabled**
+  - Intel Turbo Boost Technology: **Enabled**
+* Advanced Memory Setting:
+  - Memory Boot Mode: **Enable Fast Boot**
+  - Memory Enhancement Setting: Enhanced Performance
 ### Settings:
+* Platform Power:
+  
+  * ErP: **Disabled**
+  
+  - Soft-Off by PWR-BTN: **Delay 4s**
+  - Power Loading: **Enabled**
+  - AC BACK: **Always On**
 * IO Ports:
+  - Initial Display Output: **PCIe 1 Slot**
   - Above 4G Decoding: Enabled
-  - Re-Size BAR Support: Enabled (if you have RX 6000 Series)
-  - Super IO Configuration > Serial Port: Enabled
-  - USB Configuration > XHCI Hand-off: Enabled
-  - Network Stack Configuration > Network Stack: Disabled
+  - Re-Size BAR Support: **Enabled** (if you are using RX 6000 Series graphic card)
+  - Super IO Configuration → Serial Port: **Disabled** (Will cause the issue with Apple Watch unlock)
+  - USB Configuration:
+    * XHCI Hand-off → **Enabled**
+    * Legacy USB Support → **Enabled**
+    * USB Mass Storage Driver Support → **Enabled**
+    * Port 60/64 Emulation → **Disabled**
+  - Network Stack Configuration → Network Stack: **Disabled**
 * Miscellaneous:
-  - VT-d: Disabled
+  - Intel Platform Trust Technology(PTT) → **Disabled**
+  - Vt-d → **Disabled**
 ### Boot: 
-- CFG Lock: Disabled
-- Fast Boot: Disable Link
-- Windows 10 Features: Other OS
-- CSM Support: Disabled
+- CFG Lock: **Disabled**
+- Fast Boot: **Disable Link**
+- Windows 10 Features: **Other OS**
+- CSM Support: **Disabled**
+- Secure Boot: **Disabled** (Secure Boot will be disabled by default, but good to check)
 
 ## config.plist
 - There are 2 types of config.plist file. Based on what GPU are using, please grab the correct config.plist file. Default is for Navi graphic card.
@@ -76,13 +93,13 @@
 | Port | Connector | Visible | Description |
 |------|----------|---------|-------------|
 | 01 | Type C | Yes     | C Port on mobo|
-| 05 | Internal | Yes     | USB 2.0 Hub on mobo, currently include my BCM94360CD card |
-| 06 | Internal | Yes     | USB 2.0 Hub, should be internal |
-| 09 | Type 0 | Yes     | 4-Port USB 2.0 Hub |
-| 0A | Type 0 | Yes     | 4-Port USB 2.0 Hub |
-| 0B | Internal | Yes     | ITE Device |
+| 05 | Internal | Yes     | USB 2.0 Hub, currently is my BCM94360CD card |
+| 06 | Type 3 | Yes     | USB 2.0 Hub |
+| 09 | Type 3 | Yes     | 4-Port USB 2.0 Hub |
+| 0A | Type 3 | Yes     | 4-Port USB 2.0 Hub |
+| 0B | Type 3 | Yes     | ITE Device |
 | 0E | Internal | Yes     | Intel Wireless Card, only available on AX mobo |
-| 11 | Type C | Yes     | |
+| 11 | Type C | Yes     | C Port on mobo |
 | 18 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
 | 19 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
 
