@@ -84,7 +84,7 @@
 - Secure Boot: **Disabled** (Secure Boot will be disabled by default, but good to check)
 
 ## config.plist
-- There are 2 types of config.plist file. Based on what GPU are using, please grab the correct config.plist file. Default is for Navi graphic card.
+- There are 2 types of config.plist file. Depend on what GPU are you using, please grab the correct config.plist file. Default is for Navi graphic card.
 
 ## USB Mapping
 
