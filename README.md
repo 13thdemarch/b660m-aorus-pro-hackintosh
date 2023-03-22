@@ -50,7 +50,7 @@
 * Extreme Memory Profile: **Profile 1**
 * Advanced CPU Settings:
   - Hyper-Threading Technology: **Enabled**
-  - Intel Turbo Boost Technology: **Enabled**
+  - Intel Turbo Boost Technology: **Auto** (not the 3.0 one)
 * Advanced Memory Setting:
   - Memory Boot Mode: **Enable Fast Boot**
   - Memory Enhancement Setting: Enhanced Performance
@@ -64,8 +64,8 @@
   - AC BACK: **Always On**
 * IO Ports:
   - Initial Display Output: **PCIe 1 Slot**
-  - Above 4G Decoding: Enabled
-  - Re-Size BAR Support: **Enabled** (if you are using RX 6000 Series graphic card)
+  - Above 4G Decoding: **Auto** (Should be **Auto** to fix the second sleep, thanks @koli998)
+  - Re-Size BAR Support: **Auto** (Should be **Auto** to fix the second sleep, thanks @koli998)
   - Super IO Configuration → Serial Port: **Disabled** (Will cause the issue with Apple Watch unlock)
   - USB Configuration:
     * XHCI Hand-off → **Enabled**
@@ -79,7 +79,7 @@
 ### Boot: 
 - CFG Lock: **Disabled**
 - Fast Boot: **Disable Link**
-- Windows 10 Features: **Other OS**
+- Windows 10 Features: **Windows 10**
 - CSM Support: **Disabled**
 - Secure Boot: **Disabled** (Secure Boot will be disabled by default, but good to check)
 
