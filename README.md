@@ -21,7 +21,7 @@
 | Sound | Realtek ALC897 |
 | Wireless, Bluetooth | Apple BCM94360CD Wireless Card |
 | LAN | Intel Ethernet I-225V |
-| BIOS Version | F21 |
+| BIOS Version | F22 |
 
 ![CPU](./ss/cpubench.png)
 ![GPUMetal](./ss/gpubench_metal.png)
@@ -53,7 +53,7 @@
   - Intel Turbo Boost Technology: **Auto** (not the 3.0 one)
 * Advanced Memory Setting:
   - Memory Boot Mode: **Enable Fast Boot**
-  - Memory Enhancement Setting: Enhanced Performance
+  - Memory Enhancement Setting: **Enhanced Performance**
 ### Settings:
 * Platform Power:
   
@@ -83,9 +83,6 @@
 - CSM Support: **Disabled**
 - Secure Boot: **Disabled** (Secure Boot will be disabled by default, but good to check)
 
-## config.plist
-- There are 2 types of config.plist file. Depend on what GPU are you using, please grab the correct config.plist file. Default is for Navi graphic card.
-
 ## USB Mapping
 
 ![USB](./ss/usb.png)
@@ -109,7 +106,7 @@
 
 ## iService
 
-* To use iMessage and other Apple services, you need to generate your own serial numbers. This can be done using [CorpNewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). Make sure model is `iMacPro1,1`. Then, go [Apple Check Coverage page](https://checkcoverage.apple.com/) to check your generated serial numbers. If the website tells you that the serial number **is not valid**, that is fine. Otherwise, you have to generate a new set.
+* To use iMessage and other Apple services, you need to generate your own serial numbers. This can be done using [CorpNewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). Make sure model is `MacPro7,1`. Then, go [Apple Check Coverage page](https://checkcoverage.apple.com/) to check your generated serial numbers. If the website tells you that the serial number **is not valid**, that is fine. Otherwise, you have to generate a new set.
 
 * Next you will have to copy the following values to your `config.plist`:
   - Serial Number -> `PlatformInfo/Generic/SystemSerialNumber`.
@@ -122,7 +119,6 @@
 ## Credit
 * Apple for macOS.
 * Acidanthera Team for OpenCore Bootloader and many Kernel Extensions.
-* MaLd0n and Olarila Team for hints for Alder Lake patches and config.
 * b00t0x for his amazing job with CpuTopologyRebuild.
 
 ## Support
