@@ -2,11 +2,6 @@
 
 ![ss](./ss/screenshot.png)
 
-* macOS:
-  - Ventura 13.0 ✅
-* Bootloader: OpenCore
-* Note: If you are installing macOS Monterey and older, please disable `AppleIntelI210Ethernet.kext` in the config.plist. That kext is only need for macOS Ventura.
-
 ## System Overview
 
 | Type | Item |
@@ -52,20 +47,15 @@
   - Hyper-Threading Technology: **Enabled**
   - Intel Turbo Boost Technology: **Auto** (not the 3.0 one)
 * Advanced Memory Setting:
-  - Memory Boot Mode: **Enable Fast Boot**
   - Memory Enhancement Setting: **Enhanced Performance**
 ### Settings:
 * Platform Power:
-  
   * ErP: **Disabled**
-  
-  - Soft-Off by PWR-BTN: **Delay 4s**
   - Power Loading: **Enabled**
-  - AC BACK: **Always On**
 * IO Ports:
   - Initial Display Output: **PCIe 1 Slot**
-  - Above 4G Decoding: **Auto** (Should be **Auto** to fix the second sleep, thanks @koli998)
-  - Re-Size BAR Support: **Auto** (Should be **Auto** to fix the second sleep, thanks @koli998)
+  - Above 4G Decoding: **Disabled** (To fix the issue with the second sleep)
+  - Above 4G MMIO BIOS assignment: **Disabled**
   - Super IO Configuration → Serial Port: **Disabled** (Will cause the issue with Apple Watch unlock)
   - USB Configuration:
     * XHCI Hand-off → **Enabled**
