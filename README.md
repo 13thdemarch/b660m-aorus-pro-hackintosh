@@ -45,44 +45,71 @@ Recommend you should `Load Optimized Default` first. Then save and restart and g
 
 ### Tweaker:
 
-- CPU Upgrade: **Gaming Profile** (I don't use the E-Core so I disabled it)
+* CPU Upgrade: **Gaming Profile** (I don't use the E-Core so I disabled it)
 
-- Extreme Memory Profile: **Profile 1**
+* Extreme Memory Profile: **Profile 1**
 
-- Advanced CPU Settings:
+* Advanced CPU Settings:
 
   - Hyper-Threading Technology: **Enabled**
 
   - Intel Turbo Boost Technology: **Auto** (not the 3.0 one)
 
-- Advanced Memory Setting:
+  - Turbo Power Limit: Enabled
+    - Package Power Limit1 - TDP (Watts): 160
+    - Package Power Limit2 (Watts): 160
 
+- Advanced Memory Setting:
     - Memory Enhancement Setting: **Enhanced Performance**
+    
+- Vcore Voltage Mode: Adaptive Vcore
+    
+- Advanced Voltage Settings > CPU/VRM Settings:
+    - CPU Vcore Loadline Calibration: Low
 
 ### Settings:
+
 * Platform Power:
-  * ErP: **Disabled**
+
+  - ErP: **Disable**
+
   - Power Loading: **Enabled**
+  
 * IO Ports:
+
   - Initial Display Output: **PCIe 1 Slot**
+
   - Above 4G Decoding: **Enabled**
+
   - Above 4G MMIO BIOS assignment: **Disabled** (Will cause the issue with 2nd sleep)
+
   - Super IO Configuration → Serial Port: **Disabled** (Will cause the issue with Apple Watch unlock)
+
   - USB Configuration:
-    * XHCI Hand-off → **Enabled**
-    * Legacy USB Support → **Enabled**
-    * USB Mass Storage Driver Support → **Enabled**
-    * Port 60/64 Emulation → **Disabled**
+    - XHCI Hand-off → **Enabled**
+    - Legacy USB Support → **Enabled**
+    - USB Mass Storage Driver Support → **Enabled**
+    - Port 60/64 Emulation → **Disabled**
+
   - Network Stack Configuration → Network Stack: **Disabled**
+  
 * Miscellaneous:
+
   - Intel Platform Trust Technology(PTT) → **Disabled**
+
   - Vt-d → **Disabled**
+
 ### Boot: 
-- CFG Lock: **Disabled**
-- Fast Boot: **Disable Link**
-- Windows 10 Features: **Windows 10**
-- CSM Support: **Disabled**
-- Secure Boot: **Disabled** (Secure Boot will be disabled by default, but good to check)
+
+  - CFG Lock: **Disabled**
+
+  - Fast Boot: **Disable Link**
+
+  - Windows 10 Features: **Windows 10**
+
+  - CSM Support: **Disabled**
+
+  - Secure Boot: **Disabled** (Secure Boot will be disabled by default, but good to check)
 
 ## USB Mapping
 
