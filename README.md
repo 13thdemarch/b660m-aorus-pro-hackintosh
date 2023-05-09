@@ -41,21 +41,32 @@
 
 ## BIOS Configuration
 
+Recommend you should `Load Optimized Default` first. Then save and restart and go to BIOS again.
+
 ### Tweaker:
-* Extreme Memory Profile: **Profile 1**
-* Advanced CPU Settings:
+
+- CPU Upgrade: **Gaming Profile** (I don't use the E-Core so I disabled it)
+
+- Extreme Memory Profile: **Profile 1**
+
+- Advanced CPU Settings:
+
   - Hyper-Threading Technology: **Enabled**
+
   - Intel Turbo Boost Technology: **Auto** (not the 3.0 one)
-* Advanced Memory Setting:
-  - Memory Enhancement Setting: **Enhanced Performance**
+
+- Advanced Memory Setting:
+
+    - Memory Enhancement Setting: **Enhanced Performance**
+
 ### Settings:
 * Platform Power:
   * ErP: **Disabled**
   - Power Loading: **Enabled**
 * IO Ports:
   - Initial Display Output: **PCIe 1 Slot**
-  - Above 4G Decoding: **Disabled** (To fix the issue with the second sleep)
-  - Above 4G MMIO BIOS assignment: **Disabled**
+  - Above 4G Decoding: **Enabled**
+  - Above 4G MMIO BIOS assignment: **Disabled** (Will cause the issue with 2nd sleep)
   - Super IO Configuration → Serial Port: **Disabled** (Will cause the issue with Apple Watch unlock)
   - USB Configuration:
     * XHCI Hand-off → **Enabled**
@@ -75,28 +86,17 @@
 
 ## USB Mapping
 
-![USB](./ss/usb.png)
+- USB Map is done by `SSDT-USBP.aml`. Can be used for AX motherboard with Intel wireless card.
 
-| Port | Connector | Visible | Description |
-|------|----------|---------|-------------|
-| 01 | Type C | Yes     | C Port on mobo|
-| 05 | Internal | Yes     | USB 2.0 Hub, currently is my BCM94360CD card |
-| 06 | Type 3 | Yes     | USB 2.0 Hub |
-| 09 | Type 3 | Yes     | 4-Port USB 2.0 Hub |
-| 0A | Type 3 | Yes     | 4-Port USB 2.0 Hub |
-| 0B | Type 3 | Yes     | ITE Device |
-| 0E | Internal | Yes     | Intel Wireless Card, only available on AX mobo |
-| 11 | Type C | Yes     | C Port on mobo |
-| 18 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
-| 19 | Type 3 | Yes     | 2-Port USB 3.0 Hub |
+![USB](./ss/usb.png)
 
 ## CPU Power Management
 
-* CPU power management is done by `CPUFriend.kext` while `CPUFriendDataProvider.kext` defines how it should be done. `CPUFriendDataProvider.kext` is generated for a specific CPU and power setting. The one supplied in this repository is very universal for Alder Lake CPU.
+* CPU power management is native with SMBIOS `iMacPro1,1`, that means `CPUFriend` is not needed. If you have CPU Geekbench score is lower than me, please check your BIOS configuration. If BIOS is correct, the single score and multi score almost should be liked the result picture.
 
 ## iService
 
-* To use iMessage and other Apple services, you need to generate your own serial numbers. This can be done using [CorpNewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). Make sure model is `MacPro7,1`. Then, go [Apple Check Coverage page](https://checkcoverage.apple.com/) to check your generated serial numbers. If the website tells you that the serial number **is not valid**, that is fine. Otherwise, you have to generate a new set.
+* To use iMessage and other Apple services, you need to generate your own serial numbers. This can be done using [CorpNewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). Make sure model is `iMacPro1,1`. Then, go [Apple Check Coverage page](https://checkcoverage.apple.com/) to check your generated serial numbers. If the website tells you that the serial number **is not valid**, that is fine. Otherwise, you have to generate a new set.
 
 * Next you will have to copy the following values to your `config.plist`:
   - Serial Number -> `PlatformInfo/Generic/SystemSerialNumber`.
@@ -109,7 +109,6 @@
 ## Credit
 * Apple for macOS.
 * Acidanthera Team for OpenCore Bootloader and many Kernel Extensions.
-* b00t0x for his amazing job with CpuTopologyRebuild.
 
 ## Support
 * Support me: 
