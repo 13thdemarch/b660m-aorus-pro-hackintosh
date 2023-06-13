@@ -352,6 +352,8 @@
 			<dict>
 				<key>CFG,CFG_USE_AGDC</key>
 				<data>AA==</data>
+				<key>PP_PhmSoftPowerPlayTable</key>
+				<data>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</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
@@ -374,7 +376,7 @@
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
-				<string>V1.6.4 | Lilu.kext</string>
+				<string>V1.6.6 | Lilu.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -392,7 +394,7 @@
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
-				<string>V1.3.1</string>
+				<string>V1.3.2</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -410,7 +412,7 @@
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
-				<string>V1.8.1 | AppleALC.kext</string>
+				<string>V1.8.3 | AppleALC.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -426,31 +428,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>AppleIGC.kext</string>
+				<string>AppleIntelI210Ethernet.kext</string>
 				<key>Comment</key>
-				<string>V1.0.0d1 | AppleIGC.kext</string>
+				<string>V2.3.1</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AppleIGC</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>NVMeFix.kext</string>
-				<key>Comment</key>
-				<string>V1.1.0 | NVMeFix.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/NVMeFix</string>
+				<string>Contents/MacOS/AppleIntelI210Ethernet</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -482,7 +466,7 @@
 				<key>BundlePath</key>
 				<string>RestrictEvents.kext</string>
 				<key>Comment</key>
-				<string>V1.1.0 | RestrictEvents.kext</string>
+				<string>V1.1.2 | RestrictEvents.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -500,7 +484,7 @@
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
-				<string>V1.6.4 | WhateverGreen.kext</string>
+				<string>V1.6.5 | WhateverGreen.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -518,7 +502,7 @@
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 				<key>Comment</key>
-				<string>V1.3.1 | SMCProcessor.kext</string>
+				<string>V1.3.2 | SMCProcessor.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -554,7 +538,7 @@
 				<key>BundlePath</key>
 				<string>SMCSuperIO.kext</string>
 				<key>Comment</key>
-				<string>V1.3.1 | SMCSuperIO.kext</string>
+				<string>V1.3.2 | SMCSuperIO.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -570,13 +554,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>XHCI-unsupported.kext</string>
+				<string>CpuTopologyRebuild.kext</string>
 				<key>Comment</key>
-				<string>V0.8 | XHCI-unsupported.kext</string>
+				<string>V1.1.0 | CpuTopologyRebuild.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/CpuTopologyRebuild</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -634,6 +618,36 @@
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>Base</key>
+				<string>_cpu_thread_alloc</string>
+				<key>Comment</key>
+				<string>force HT enabled for Mojave or later</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>i4iUAQAA</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>18.0.0</string>
+				<key>Replace</key>
+				<data>uf8AAACQ</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -650,6 +664,8 @@
 			<key>CustomSMBIOSGuid</key>
 			<true/>
 			<key>DisableIoMapper</key>
+			<false/>
+			<key>DisableIoMapperMapping</key>
 			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
@@ -781,6 +797,33 @@
 		</dict>
 		<key>Serial</key>
 		<dict>
+			<key>Custom</key>
+			<dict>
+				<key>BaudRate</key>
+				<integer>115200</integer>
+				<key>ClockRate</key>
+				<integer>1843200</integer>
+				<key>DetectCable</key>
+				<false/>
+				<key>ExtendedTxFifoSize</key>
+				<integer>64</integer>
+				<key>FifoControl</key>
+				<integer>7</integer>
+				<key>LineControl</key>
+				<integer>3</integer>
+				<key>PciDeviceInfo</key>
+				<data>/w==</data>
+				<key>RegisterAccessWidth</key>
+				<integer>8</integer>
+				<key>RegisterBase</key>
+				<integer>1016</integer>
+				<key>RegisterStride</key>
+				<integer>1</integer>
+				<key>UseHardwareFlowControl</key>
+				<false/>
+				<key>UseMmio</key>
+				<false/>
+			</dict>
 			<key>Init</key>
 			<false/>
 			<key>Override</key>
@@ -837,7 +880,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>alcid=12 agdpmod=pikera shikigva=128</string>
+				<string>alcid=12 agdpmod=pikera shikigva=128 e1000=0</string>
 				<key>csr-active-config</key>
 				<data>hwIAAA==</data>
 				<key>run-efi-updater</key>
@@ -1058,6 +1101,18 @@
 				<key>Path</key>
 				<string>ResetNvramEntry.efi</string>
 			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>AudioDxe.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>AudioDxe.efi</string>
+			</dict>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1082,6 +1137,8 @@
 		<dict>
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
+			<key>ConsoleFont</key>
+			<string></string>
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>DirectGopRendering</key>
@@ -1094,6 +1151,8 @@
 			<string>Disabled</string>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
+			<key>InitialMode</key>
+			<string>Auto</string>
 			<key>ProvideConsoleGop</key>
 			<true/>
 			<key>ReconnectGraphicsOnConnect</key>
@@ -1148,6 +1207,8 @@
 			<key>HashServices</key>
 			<false/>
 			<key>OSInfo</key>
+			<false/>
+			<key>PciIo</key>
 			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
