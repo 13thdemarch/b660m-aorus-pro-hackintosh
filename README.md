@@ -121,17 +121,17 @@ Recommend you should `Load Optimized Default` first. Then save and restart and g
 
   * Open config.plist and snapshot one time.
     -	System Integrity Protection is set to 0x803
-    	- csr-active-config | Data | 03080000
-    	  Reset NVRAM or add `csr-active-config` to `Delete` to ensure new variable is set.
+    	- csr-active-config | Data | **03080000**
+    	- Reset NVRAM or add `csr-active-config` to `Delete` to ensure new variable is set.
     - AMFI is disable
-      - boot-arg | string | amfi=0x80
+      - boot-arg | string | **amfi=0x80**
     - `SecureBootModel` is set to `Disabled`.
     - Kernel > Block:
-      - Identifier: com.apple.iokit.IOSkywalkFamily
-      - Comment: Allow IOSkywalkFamily Downgrade
-      - Enabled: True
-      - Strategy: Exclude
-      - MinKernel: 23.0.0 (Important, apply on Sonoma only)
+      - Identifier: **com.apple.iokit.IOSkywalkFamily**
+      - Comment: **Allow IOSkywalkFamily Downgrade**
+      - Enabled: **True**
+      - Strategy: **Exclude**
+      - MinKernel: **23.0.0** (Important, apply on Sonoma only)
     - Make sure `IOSkywalk.kext` and `IO80211FamilyLegacy.kext` and its child `AirPortBrcmNIC.kext` are injected. Also, set all `MinKernel` to `23.0.0` (apply on Sonoma only).
 
   * Restart the machine.
