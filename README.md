@@ -112,34 +112,40 @@ Recommend you should `Load Optimized Default` first. Then save and restart and g
 ## macOS Sonoma
 ### Note: This guide is for Apple wifi card only. For Intel wifi card, please check OpenIntelWireless repo for more information.
 * Preparation:
-- OpenCore is the latest version.
-- Download these kexts here: https://cdn.discordapp.com/attachments/832423433488171038/1158424870380654682/IO80211_Legacy_Sonoma.zip
-- Extract .zip file and put 2 kexts to OC/Kexts folder.
-- Open config.plist and snapshot one time.
-- System Integrity Protection is set to 0x803
-  ** csr-active-config | Data | 03080000
-  Reset NVRAM or add `csr-active-config` to `Delete` to ensure new variable is set.
-- AMFI is disable
-  ** boot-arg | string | amfi=0x80
-- `SecureBootModel` is set to `Disabled`.
-- Kernel > Block:
-  ** Identifier: com.apple.iokit.IOSkywalkFamily
-  ** Comment: Allow IOSkywalkFamily Downgrade
-  ** Enabled: True
-  ** Strategy: Exclude
-  ** MinKernel: 23.0.0 (Important, apply on Sonoma only)
-- Make sure `IOSkywalk.kext` and `IO80211FamilyLegacy.kext` and its child `AirPortBrcmNIC.kext` are injected. Also, set all `MinKernel` to `23.0.0` (apply on Sonoma only).
-- Restart the machine.
+
+  * OpenCore is the latest version.
+
+  * Download these kexts here: https://cdn.discordapp.com/attachments/832423433488171038/1158424870380654682/IO80211_Legacy_Sonoma.zip
+
+  * Extract .zip file and put 2 kexts to OC/Kexts folder.
+
+  * Open config.plist and snapshot one time.
+    -	System Integrity Protection is set to 0x803
+    	- csr-active-config | Data | 03080000
+    	  Reset NVRAM or add `csr-active-config` to `Delete` to ensure new variable is set.
+    - AMFI is disable
+      - boot-arg | string | amfi=0x80
+    - `SecureBootModel` is set to `Disabled`.
+    - Kernel > Block:
+      - Identifier: com.apple.iokit.IOSkywalkFamily
+      - Comment: Allow IOSkywalkFamily Downgrade
+      - Enabled: True
+      - Strategy: Exclude
+      - MinKernel: 23.0.0 (Important, apply on Sonoma only)
+    - Make sure `IOSkywalk.kext` and `IO80211FamilyLegacy.kext` and its child `AirPortBrcmNIC.kext` are injected. Also, set all `MinKernel` to `23.0.0` (apply on Sonoma only).
+
+  * Restart the machine.
+
+
 * Installation:
-- Download the latest version of [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases).
-- Copy OCLP to Application folder and run it.
-- If everything is correct, you can click the `Post-Install Root Patch` button to start patching.
+  * Download the latest version of [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases).
+  * Copy OCLP to Application folder and run it.
+  * If everything is correct, you can click the `Post-Install Root Patch` button to start patching.
 
 ![OCLP](./ss/oclp.png)
 
 * Finish
-- Then restart the machine. The wifi should be worked. If not, try to reset NVRAM and reset network settings. You can follow [here](https://www.lifewire.com/reset-network-settings-on-mac-5184072) for the network reset guide.
-
+  * Then restart the machine. The wifi should be worked. If not, try to reset NVRAM and reset network settings. You can follow [here](https://www.lifewire.com/reset-network-settings-on-mac-5184072) for the network reset guide.
 ## Credit
 * Apple for macOS.
 * Acidanthera Team for OpenCore Bootloader and many Kernel Extensions.
