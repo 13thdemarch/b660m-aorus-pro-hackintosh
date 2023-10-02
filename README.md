@@ -110,7 +110,8 @@ Recommend you should `Load Optimized Default` first. Then save and restart and g
 * If they don't, follow [this in-depth guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html). It goes deeper into ROM, clearing NVRAM, clearing Keychain (missing this step might cause major issues), and much more.
 
 ## macOS Sonoma
-### Note: This guide is for Apple wifi card only. For Intel wifi card, please check OpenIntelWireless repo for more information.
+Note: This guide is for Apple wifi card only. For Intel wifi card, please check OpenIntelWireless repo for more information.
+
 * Preparation:
 
   * OpenCore is the latest version.
