@@ -123,7 +123,7 @@ Recommend you should `Load Optimized Default` first. Then save and restart and g
     -	System Integrity Protection is set to 0x803
     	- csr-active-config | Data | **03080000**
     	- Reset NVRAM or add `csr-active-config` to `Delete` to ensure new variable is set.
-    - AMFI is disable
+    - AMFI is disabled
       - boot-arg | string | **amfi=0x80**
     - `SecureBootModel` is set to `Disabled`.
     - Kernel > Block:
