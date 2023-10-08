@@ -147,6 +147,12 @@ Note: This guide is for Apple wifi card only. For Intel wifi card, please check 
 
 * Finish
   * Then restart the machine. The wifi should be worked. If not, try to reset NVRAM and reset network settings. You can follow [here](https://www.lifewire.com/reset-network-settings-on-mac-5184072) for the network reset guide.
+
+## CPU Topology Rebuild
+
+- `-ctrsmt` boot arg makes E-Cores to be recognized as the 3-way SMT logical threads of the P-Cores. That means with my i7-12700F, I will have 8 cores and 20 threads on macOS. This boot-arg can fix Xcode app building.
+- More informations can be found at [here](https://github.com/b00t0x/CpuTopologyRebuild). Thanks to b00t0x for his amazing work.
+
 ## Credit
 * Apple for macOS.
 * Acidanthera Team for OpenCore Bootloader and many Kernel Extensions.
