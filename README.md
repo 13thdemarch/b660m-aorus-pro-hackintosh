@@ -16,7 +16,7 @@
 | Sound | Realtek ALC897 |
 | Wireless, Bluetooth | Apple BCM94360CD Wireless Card |
 | LAN | Intel Ethernet I-225V |
-| BIOS Version | F25 |
+| BIOS Version | F28 |
 
 ![CPU](./ss/cpubench.png)
 ![GPUMetal](./ss/gpubench_metal.png)
@@ -45,13 +45,9 @@ Recommend you should `Load Optimized Default` first. Then save and restart and g
 
 ### Tweaker:
 * Extreme Memory Profile: **Profile 1**
-
 * Advanced CPU Settings:
   - Hyper-Threading Technology: **Enabled**
   - Intel Turbo Boost Technology: **Auto** (not the 3.0 one)
-  - Turbo Power Limit: Enabled
-    - Package Power Limit1 - TDP (Watts): 160
-    - Package Power Limit2 (Watts): 160
 
 - Advanced Memory Setting:
     - Memory Enhancement Setting: **Enhanced Performance**
@@ -80,7 +76,7 @@ Recommend you should `Load Optimized Default` first. Then save and restart and g
   - Network Stack Configuration → Network Stack: **Disabled**
   
 * Miscellaneous:
-  - Intel Platform Trust Technology(PTT) → **Disabled**
+  - Intel Platform Trust Technology(PTT) → **Enabled**
   - Vt-d → **Enabled**
 
 ### Boot: 
@@ -109,32 +105,27 @@ Recommend you should `Load Optimized Default` first. Then save and restart and g
 
 * If they don't, follow [this in-depth guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html). It goes deeper into ROM, clearing NVRAM, clearing Keychain (missing this step might cause major issues), and much more.
 
-## macOS Sonoma
+## macOS Sonoma and Sequoia Wireless
 Note: This guide is for Apple wifi card only. For Intel wifi card, please check OpenIntelWireless repo for more information.
 
 * Preparation:
 
   * OpenCore is the latest version.
-
-  * Download these kexts here: https://cdn.discordapp.com/attachments/832423433488171038/1158424870380654682/IO80211_Legacy_Sonoma.zip
-
+  * Download these kexts here: https://cdn.discordapp.com/attachments/496510149658279939/1271822412865998999/IO80211Legacy.zip?ex=66b8bc6c&is=66b76aec&hm=7a575c7d31f6aa5c0fc68fb5304fa1db1ca8e1d385a7c02d4b0d41371d10f183&
   * Extract .zip file and put 2 kexts to OC/Kexts folder.
-
   * Open config.plist and snapshot one time.
     -	System Integrity Protection is set to 0x803
     	- csr-active-config | Data | **03080000**
-    	- Reset NVRAM or add `csr-active-config` to `Delete` to ensure new variable is set.
     - AMFI is disabled
-      - boot-arg | string | **amfi=0x80**
+      - Using `AMFIPass.kext`
     - `SecureBootModel` is set to `Disabled`.
     - Kernel > Block:
       - Identifier: **com.apple.iokit.IOSkywalkFamily**
       - Comment: **Allow IOSkywalkFamily Downgrade**
       - Enabled: **True**
       - Strategy: **Exclude**
-      - MinKernel: **23.0.0** (Important, apply on Sonoma only)
-    - Make sure `IOSkywalk.kext` and `IO80211FamilyLegacy.kext` and its child `AirPortBrcmNIC.kext` are injected. Also, set all `MinKernel` to `23.0.0` (apply on Sonoma only).
-
+      - MinKernel: **23.0.0** (**Important**, apply from Sonoma)
+    - Make sure `IOSkywalk.kext` and `IO80211FamilyLegacy.kext` and its child `AirPortBrcmNIC.kext` are injected. Also, set all `MinKernel` to `23.0.0` (apply from Sonoma).
   * Restart the machine.
 
 
