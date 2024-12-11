@@ -8,15 +8,16 @@
 | ---- | ---- |
 | Motherboard | B660M Gigabyte Aorus Pro DDR4 |
 | CPU | Intel Core i7-12700F @ 2.10 GHz, 25M Cache, up to 4.90 GHz|
-| RAM | 4 x Corsair Vengeance LPX 8GB 3200MHz DDR4 CMK16GX4M2E3200C |
+| RAM | 4 x Corsair Vengeance LPX 8GB 3200MHz DDR4 |
 | GPU | Sapphire Nitro+ RX 6600 XT 8GB |
 | SSD1 | Western Digital SN850 500GB NVMe Gen4x4 Solid State Drive |
+| SSD2 | Samsung PM9A1 256GB NVMe Gen4x4 Solid State Drive |
 | SSD2 | Lexar 256GB SATA Solid State Drive |
 | SSD3 | KingSpec 480GB SATA Solid State Drive |
 | Sound | Realtek ALC897 |
-| Wireless, Bluetooth | Apple BCM94360CD Wireless Card |
+| Wireless, Bluetooth | Dell DW1560 |
 | LAN | Intel Ethernet I-225V |
-| BIOS Version | F28 |
+| BIOS Version | F30 |
 
 ![CPU](./ss/cpubench.png)
 ![GPUMetal](./ss/gpubench_metal.png)
@@ -104,40 +105,6 @@ Recommend you should `Load Optimized Default` first. Then save and restart and g
   Reboot and Apple services should work.
 
 * If they don't, follow [this in-depth guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html). It goes deeper into ROM, clearing NVRAM, clearing Keychain (missing this step might cause major issues), and much more.
-
-## macOS Sonoma and Sequoia Wireless
-Note: This guide is for Apple wifi card only. For Intel wifi card, please check OpenIntelWireless repo for more information.
-
-* Preparation:
-
-  * OpenCore is the latest version.
-  * Download these kexts here: https://cdn.discordapp.com/attachments/496510149658279939/1271822412865998999/IO80211Legacy.zip?ex=66b8bc6c&is=66b76aec&hm=7a575c7d31f6aa5c0fc68fb5304fa1db1ca8e1d385a7c02d4b0d41371d10f183&
-  * Extract .zip file and put 2 kexts to OC/Kexts folder.
-  * Open config.plist and snapshot one time.
-    -	System Integrity Protection is set to 0x803
-    	- csr-active-config | Data | **03080000**
-    - AMFI is disabled
-      - Using `AMFIPass.kext`
-    - `SecureBootModel` is set to `Disabled`.
-    - Kernel > Block:
-      - Identifier: **com.apple.iokit.IOSkywalkFamily**
-      - Comment: **Allow IOSkywalkFamily Downgrade**
-      - Enabled: **True**
-      - Strategy: **Exclude**
-      - MinKernel: **23.0.0** (**Important**, apply from Sonoma)
-    - Make sure `IOSkywalk.kext` and `IO80211FamilyLegacy.kext` and its child `AirPortBrcmNIC.kext` are injected. Also, set all `MinKernel` to `23.0.0` (apply from Sonoma).
-  * Restart the machine.
-
-
-* Installation:
-  * Download the latest version of [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases).
-  * Copy OCLP to Application folder and run it.
-  * If everything is correct, you can click the `Post-Install Root Patch` button to start patching.
-
-![OCLP](./ss/oclp.png)
-
-* Finish
-  * Then restart the machine. The wifi should be worked. If not, try to reset NVRAM and reset network settings. You can follow [here](https://www.lifewire.com/reset-network-settings-on-mac-5184072) for the network reset guide.
 
 ## CPU Topology Rebuild
 
