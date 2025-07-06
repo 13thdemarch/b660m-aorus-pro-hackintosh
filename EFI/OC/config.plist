@@ -62,14 +62,6 @@
 				<key>Path</key>
 				<string>SSDT-USBP.aml</string>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-ZeroRPM-OFF.aml</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>SSDT-ZeroRPM-OFF.aml</string>
-			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
@@ -389,13 +381,7 @@
 	<key>DeviceProperties</key>
 	<dict>
 		<key>Add</key>
-		<dict>
-			<key>#PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>CFG,CFG_USE_AGDC</key>
-				<data>AA==</data>
-			</dict>
-		</dict>
+		<dict/>
 		<key>Delete</key>
 		<dict/>
 	</dict>
@@ -1393,7 +1379,7 @@
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
 			<key>UIScale</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>UgaPassThrough</key>
 			<false/>
 		</dict>
