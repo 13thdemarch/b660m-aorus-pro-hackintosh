@@ -1,5 +1,7 @@
 # Gigabyte Aorus Pro B660M Hackintosh
 
+## Since macOS 26 Tahoe is the final version to support Intel Macs and AMD GPUs, I've decided to archive this repo from now on. I'm currently switching to Windows and using an Nvidia GPU.
+
 ![ss](./ss/screenshot.png)
 
 ## System Overview
